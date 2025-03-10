@@ -1,6 +1,6 @@
 <script>
 	import Text from "../resuable/Text.svelte";
-
+    import IconMenu from '~icons/lucide/menu'
     let isNavigationVisible = false;
     const toogleNavigation = () => {
         isNavigationVisible = !isNavigationVisible;
@@ -10,7 +10,7 @@
         {href: "/home", child: "About"},
         {href: "/home", child: "Contact"},
         {href: "/home", child: "Profile"},
-        {href: "/home", child: "Buy"},
+        {href: "/homem", child: "Buy"},
     ]
 </script>
 <header class="flex justify-between  p-5">
@@ -18,7 +18,7 @@
         <Text text =  "hacks_coder" className = ""/>
     </div>
         <nav class="md:hidden">
-            <button onclick={toogleNavigation} class="w-fit p-2 h-10 rounded-full border-2">Menu</button>
+            <IconMenu onclick={toogleNavigation} class="text-2xl"/>
             {#if isNavigationVisible}
                 {#each navigation as item}
                     <div class="flex gap-2">

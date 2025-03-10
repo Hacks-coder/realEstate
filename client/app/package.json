@@ -17,6 +17,9 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
+		"@iconify-json/fa-regular": "^1.2.1",
+		"@iconify-json/lucide": "^1.2.28",
+		"@iconify-json/ri": "^1.2.5",
 		"@sveltejs/adapter-vercel": "^5.5.2",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
